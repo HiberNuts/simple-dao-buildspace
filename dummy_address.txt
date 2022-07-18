@@ -1,3 +1,0 @@
-SDK initialized by address: 0x0a960Fa6158f4d7aDfA2A3dA5408aB6efd4A5C5A
-
-Successfully deployed editionDrop contract, address: 0xc5dCC40Dbf6B6E22Ac53b2C94C3C8ed3a5a8e472

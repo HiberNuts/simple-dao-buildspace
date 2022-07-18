@@ -1,0 +1,7 @@
+SDK initialized by address: 0x0a960Fa6158f4d7aDfA2A3dA5408aB6efd4A5C5A
+
+Successfully deployed editionDrop contract, address: 0xc5dCC40Dbf6B6E22Ac53b2C94C3C8ed3a5a8e472
+
+Successfully deployed token module, address: 0x7797a4401E834bd328bB477A562f170B4260c9Cf
+
+Successfully deployed vote contract, address: 0x8c918F2360463a251C8B7a8e65c4A0043ec61cF6
