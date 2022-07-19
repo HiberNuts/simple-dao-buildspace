@@ -1,5 +1,6 @@
 import "./App.css";
-import { useAddress, useMetamask, useEditionDrop, useToken, useVote } from "@thirdweb-dev/react";
+import { useAddress, useMetamask, useEditionDrop, useToken, useVote, useNetwork } from "@thirdweb-dev/react";
+import { ChainId } from "@thirdweb-dev/sdk";
 import { useState, useEffect, useMemo } from "react";
 import { AddressZero } from "@ethersproject/constants";
 
@@ -7,6 +8,7 @@ function App() {
   const address = useAddress();
   const connectWithMetamask = useMetamask();
   console.log("👋 Address:", address);
+  const network = useNetwork();
 
   const editionDrop = useEditionDrop("0xc5dCC40Dbf6B6E22Ac53b2C94C3C8ed3a5a8e472");
 
@@ -170,6 +172,15 @@ function App() {
       setIsClaiming(false);
     }
   };
+
+  if (address && network?.[0].data.chain.id !== ChainId.Rinkeby) {
+    return (
+      <div className="unsupported-network">
+        <h2>Please connect to Rinkeby</h2>
+        <p>This dapp only works on the Rinkeby network, please switch networks in your connected wallet.</p>
+      </div>
+    );
+  }
 
   if (!address) {
     return (
