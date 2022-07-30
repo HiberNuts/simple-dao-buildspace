@@ -3,6 +3,7 @@ import sdk from "./1-initialize-sdk.js";
 import { read, readFileSync } from "fs";
 import colors from "colors";
 
+
 (async () => {
   try {
     const editionDropAddress = await sdk.deployer.deployEditionDrop({
