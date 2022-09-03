@@ -3,7 +3,8 @@ import { useAddress, useMetamask, useEditionDrop, useToken, useVote, useNetwork 
 import { ChainId } from "@thirdweb-dev/sdk";
 import { useState, useEffect, useMemo } from "react";
 import { AddressZero } from "@ethersproject/constants";
-
+import githubLogo from "./assets/icons8-github.svg";
+import GithubCorner from "react-github-corner";
 function App() {
   const address = useAddress();
   const connectWithMetamask = useMetamask();
@@ -178,6 +179,7 @@ function App() {
       <div className="unsupported-network">
         <h2>Please connect to Rinkeby</h2>
         <p>This dapp only works on the Rinkeby network, please switch networks in your connected wallet.</p>
+        <GithubCorner size="100" href="https://github.com/HiberNuts/simple-dao-buildspace" />
       </div>
     );
   }
@@ -189,6 +191,7 @@ function App() {
         <button onClick={connectWithMetamask} className="btn-hero">
           Connect your wallet
         </button>
+        <GithubCorner size="100" href="https://github.com/HiberNuts/simple-dao-buildspace" />
       </div>
     );
   }
@@ -334,6 +337,7 @@ function App() {
             </form>
           </div>
         </div>
+        <GithubCorner size="100" href="https://github.com/HiberNuts/simple-dao-buildspace" />
       </div>
     );
   }
@@ -345,6 +349,7 @@ function App() {
       <button disabled={isClaiming} onClick={mintNft}>
         {isClaiming ? "Minting..." : "Mint your nft (FREE)"}
       </button>
+      <GithubCorner size="100" href="https://github.com/HiberNuts/simple-dao-buildspace" />
     </div>
   );
 }

@@ -27,6 +27,26 @@
 .App-link {
   color: #61dafb;
 }
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  padding-bottom: 5px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
 
 @keyframes App-logo-spin {
   from {
