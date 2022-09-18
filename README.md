@@ -2,6 +2,8 @@
 
 ### custom smart-contract
 
+website link : http://simple-dao-buildspace.vercel.app/
+
 An amazing site that depicts how DAO works
 user can login with meta mask and mint themselves a NFT using thirdweb NFT functions.
 Then user gets to be part of the DAO.
